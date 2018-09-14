@@ -1,0 +1,316 @@
+.home-span{
+    text-align: center;
+}
+
+.home-span p{
+   font-size: 1rem;
+   color:#495057;
+   font-weight: 500;
+}
+
+.home-container{
+    margin-top:10%;
+}
+
+
+.jumbotron{
+    padding: 1rem 1rem;
+    height: 750px;
+}
+.display-6{
+    color: #007bff;
+}
+.navinfo{
+    font-size: 0.9em;
+}
+.navbar-nav {
+    display: flex;
+    flex-direction: column; // cannot use `inherit` to get the `.navbar`s value
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style: none;
+  
+    .nav-link {
+      padding-right: 1rem;
+      padding-left: 1rem;
+    }
+  
+    .dropdown-menu {
+      position: static;
+      float: none;
+    }
+  }
+
+.panel-primary {
+	border-color: #337ab7
+}
+
+.panel-primary>.panel-heading {
+	color: #fff;
+	background-color: #6c757d;
+	border-color: #6c757d
+}
+.panel-heading {
+	padding: 10px 15px;
+	border-bottom: 1px solid transparent;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px
+}
+.nav {
+	padding-left: 0;
+	margin-bottom: 0;
+	list-style: none
+}
+
+.nav>li {
+	position: relative;
+	display: block
+}
+
+.nav>li>a {
+	position: relative;
+	display: block;
+	padding: 10px 15px
+}
+
+.nav>li>a:focus,
+.nav>li>a:hover {
+	text-decoration: none;
+	background-color: #eee
+}
+
+.nav>li.disabled>a {
+	color: #777
+}
+
+.nav>li.disabled>a:focus,
+.nav>li.disabled>a:hover {
+	color: #777;
+	text-decoration: none;
+	cursor: not-allowed;
+	background-color: transparent
+}
+
+.nav .open>a,
+.nav .open>a:focus,
+.nav .open>a:hover {
+	background-color: #eee;
+	border-color: #337ab7
+}
+
+.nav .nav-divider {
+	height: 1px;
+	margin: 9px 0;
+	overflow: hidden;
+	background-color: #e5e5e5
+}
+
+.nav>li>a>img {
+	max-width: none
+}
+
+.nav-tabs {
+	border-bottom: 1px solid #ddd
+}
+
+.nav-tabs>li {
+	float: left;
+    margin-bottom: -1px;
+    margin-top: -2px;
+}
+
+.nav-tabs>li>a {
+	margin-right: 2px;
+	line-height: 1.42857143;
+	border: 1px solid transparent;
+	border-radius: 4px 4px 0 0
+}
+
+.nav-tabs>li>a:hover {
+	border-color: #eee #eee #ddd
+}
+
+.nav-tabs>li.active>a,
+.nav-tabs>li.active>a:focus,
+.nav-tabs>li.active>a:hover {
+	color: #555;
+	cursor: default;
+	background-color: #fff;
+	border: 1px solid #ddd;
+	border-bottom-color: transparent
+}
+
+.nav-tabs.nav-justified {
+	width: 100%;
+	border-bottom: 0
+}
+
+.nav-tabs.nav-justified>li {
+	float: none
+}
+
+.nav-tabs.nav-justified>li>a {
+	margin-bottom: 5px;
+	text-align: center
+}
+
+.nav-tabs.nav-justified>.dropdown .dropdown-menu {
+	top: auto;
+	left: auto
+}
+
+@media (min-width:768px) {
+	.nav-tabs.nav-justified>li {
+		display: table-cell;
+		width: 1%
+	}
+	.nav-tabs.nav-justified>li>a {
+		margin-bottom: 0
+	}
+}
+
+.nav-tabs.nav-justified>li>a {
+	margin-right: 0;
+	border-radius: 4px
+}
+
+.nav-tabs.nav-justified>.active>a,
+.nav-tabs.nav-justified>.active>a:focus,
+.nav-tabs.nav-justified>.active>a:hover {
+	border: 1px solid #ddd
+}
+
+@media (min-width:768px) {
+	.nav-tabs.nav-justified>li>a {
+		border-bottom: 1px solid #ddd;
+		border-radius: 4px 4px 0 0
+	}
+	.nav-tabs.nav-justified>.active>a,
+	.nav-tabs.nav-justified>.active>a:focus,
+	.nav-tabs.nav-justified>.active>a:hover {
+		border-bottom-color: #fff
+	}
+}
+
+.panel-body {
+	padding: 15px
+}
+.panel>.panel-body+.table,
+.panel>.panel-body+.table-responsive,
+.panel>.table+.panel-body,
+.panel>.table-responsive+.panel-body {
+	border-top: 1px solid #ddd
+}
+.panel-group .panel-heading+.panel-collapse>.panel-body {
+	border-top: 1px solid #ddd
+}
+.panel-group .panel-footer+.panel-collapse .panel-body {
+	border-bottom: 1px solid #ddd
+}
+.panel-default>.panel-heading+.panel-collapse>.panel-body {
+	border-top-color: #ddd
+}
+.panel-default>.panel-footer+.panel-collapse>.panel-body {
+	border-bottom-color: #ddd
+}
+
+.panel-primary>.panel-heading+.panel-collapse>.panel-body {
+	border-top-color: #337ab7
+}
+.panel-body:after,
+.panel-body:before,
+.row:after,
+.row:before {
+	display: table;
+	content: " "
+}
+.panel-body:after,
+.row:after {
+	clear: both
+}
+.panel {
+	margin-bottom: 20px;
+	background-color: #fff;
+	border: 1px solid transparent;
+	border-radius: 4px;
+	-webkit-box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .05);
+    height: 700px;
+}
+.panel.with-nav-tabs .panel-heading{
+    padding: 0px 5px 0 0px;
+}
+.panel.with-nav-tabs .nav-tabs{
+	border-bottom: none;
+}
+.panel.with-nav-tabs .nav-justified{
+	margin-bottom: -1px;
+}
+
+.with-nav-tabs.panel-primary .nav-tabs > li > a,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+    color: #fff;
+}
+.with-nav-tabs.panel-primary .nav-tabs > .open > a,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > .open > a:focus,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li > a:focus {
+	color: #fff;
+	background-color: #777;
+	border-color: transparent;
+}
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:hover,
+.with-nav-tabs.panel-primary .nav-tabs > li.active > a:focus {
+	color: #000;
+    background-color: #fff;
+    border-color: #777;
+    border-bottom-color: transparent;
+    border-right-color: transparent;
+}
+
+
+@font-face {
+    font-family: 'Glyphicons Halflings';
+	src: url(../../scss/bootstrap/fonts/glyphicons-halflings-regular.eot);
+    src: url(../../scss/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix) format('embedded-opentype'), 
+    url(../../scss/bootstrap/fonts/glyphicons-halflings-regular.woff2) format('woff2'), 
+    url(../../scss/bootstrap/fonts/glyphicons-halflings-regular.woff) format('woff'), 
+    url(../../scss/bootstrap/fonts/glyphicons-halflings-regular.ttf) format('truetype'), 
+    url(../../scss/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular) format('svg')
+}
+
+.glyphicon {
+	position: relative;
+	top: 2px;
+	display: inline-block;
+	font-family: 'Glyphicons Halflings';
+	font-style: normal;
+	font-weight: 400;
+	line-height: 1;
+	-webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+.glyphicon-alert:before {
+	content: "\e209"
+}
+
+.yellow {
+    color: yellow;
+}
+
+.quality-sec{
+    background-color: #cdf3fd;
+    height: 536px;
+}
+.span-font{
+    font-size: 0.9em;
+}
+.grid-row-gap{
+	display: grid;
+    grid-row-gap: 15px;
+}
