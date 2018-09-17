@@ -31,9 +31,18 @@
 
 .nav-tabs {
   border-bottom: $nav-tabs-border-width solid $nav-tabs-border-color;
+  background-color: #6c757d;
+  @include border-top-radius( 0.5rem);
 
   .nav-item {
     margin-bottom: -$nav-tabs-border-width;
+    background-color: transparent;
+   
+    a{
+      color:$white;
+      text-decoration: none;
+      -webkit-text-decoration-skip: objects;
+    }
   }
 
   .nav-link {
@@ -42,6 +51,7 @@
 
     @include hover-focus {
       border-color: $nav-tabs-link-hover-border-color;
+      @include border-top-radius(0.25rem);
     }
 
     &.disabled {
@@ -51,10 +61,12 @@
     }
   }
 
+  
+
   .nav-link.active,
   .nav-item.show .nav-link {
-    color: $nav-tabs-link-active-color;
-    background-color: $nav-tabs-link-active-bg;
+    color: $blue;
+    background-color: $white;
     border-color: $nav-tabs-link-active-border-color;
   }
 

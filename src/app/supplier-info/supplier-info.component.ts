@@ -12,12 +12,12 @@ const states = ['Alabama', 'Alaska', 'American Samoa', 'Arizona', 'Arkansas', 'C
   'Washington', 'West Virginia', 'Wisconsin', 'Wyoming'];
 
 @Component({
-  selector: 'app-supplierinfo',
-  templateUrl: './supplierinfo.component.html',
-  styleUrls: ['./supplierinfo.component.scss']
+  selector: 'app-supplier-info',
+  templateUrl: './supplier-info.component.html',
+  styleUrls: ['./supplier-info.component.scss']
 })
+export class SupplierInfoComponent implements OnInit {
 
-export class SupplierinfoComponent implements OnInit {
   public model: any;
   formatter = (result: string) => result.toUpperCase();
 
@@ -32,5 +32,4 @@ export class SupplierinfoComponent implements OnInit {
 
   ngOnInit() {
   }
-
 }
