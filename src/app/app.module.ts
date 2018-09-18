@@ -9,6 +9,7 @@ import {LoginModule} from './login/login.module';
 import {HomeModule} from './home/home.module';
 import {SupplierInfoModule} from './supplier-info/supplier-info.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -21,6 +22,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     ReactiveFormsModule,
     BrowserModule,
     RouterModule,
+    HttpClientModule,
     AppRoutingModule,
     LayoutModule,
     LoginModule,

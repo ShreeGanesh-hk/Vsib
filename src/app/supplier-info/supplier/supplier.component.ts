@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnChanges, OnInit, SimpleChanges, ViewChild} from '@angular/core';
+import {GeneralinfoComponent} from './generalinfo/generalinfo.component';
 
 @Component({
   selector: 'app-supplier',
@@ -6,10 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./supplier.component.scss']
 })
 export class SupplierComponent implements OnInit {
+  public spplierDetails: any;
+ // public generalDetails: any;
 
-  constructor() { }
+  constructor() {
+  }
+
+  @ViewChild(GeneralinfoComponent)
+  private generalinfoComponent: GeneralinfoComponent;
 
   ngOnInit() {
   }
 
+  updateRef() {
+    this.generalinfoComponent.generalDetails = this.spplierDetails.generalInfo;
+  }
 }
