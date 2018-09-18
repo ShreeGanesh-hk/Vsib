@@ -12,6 +12,7 @@ import { GeneralinfoComponent } from './supplier/generalinfo/generalinfo.compone
 import { CertificatesComponent } from './supplier/certificates/certificates.component';
 import { SuppliestoComponent } from './supplier/suppliesto/suppliesto.component';
 import { PurchasersComponent } from './supplier/purchasers/purchasers.component';
+import { EDIstatusComponent } from './supplier/edistatus/edistatus.component';
 
 
 @NgModule({
@@ -24,6 +25,6 @@ import { PurchasersComponent } from './supplier/purchasers/purchasers.component'
     SidebarModule,
     SupplierInfoRoutingModule
   ],
-  declarations: [SupplierInfoComponent,SupplierComponent,GeneralinfoComponent,PurchasersComponent,SuppliestoComponent,CertificatesComponent]
+  declarations: [EDIstatusComponent,SupplierInfoComponent,SupplierComponent,GeneralinfoComponent,PurchasersComponent,SuppliestoComponent,CertificatesComponent]
 })
 export class SupplierInfoModule { }

@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-login',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class LoginComponent implements OnInit {
 
-  constructor() { 
+  constructor(private _router:Router) { 
 
     // Style to add background image only to Login page;
     document.body.style.backgroundImage = "url('../../assets/image/volvotrucks.jpg')";
@@ -19,5 +20,10 @@ export class LoginComponent implements OnInit {
 
   ngOnInit() {
   }
+
+  navigateDetails() {
+      document.body.style.backgroundImage = '';
+      this._router.navigate(['./home']);
+    }
 
 }

@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { Router } from '@angular/router';
+import { RouterModule,Router } from '@angular/router';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -20,6 +20,7 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     NgbModule,
     ReactiveFormsModule,
     BrowserModule,
+    RouterModule,
     AppRoutingModule,
     LayoutModule,
     LoginModule,
