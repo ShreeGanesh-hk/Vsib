@@ -9,6 +9,7 @@ import {LoginModule} from './login/login.module';
 import {HomeModule} from './home/home.module';
 import {SupplierInfoModule} from './supplier-info/supplier-info.module';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import { ScorecardModule } from './supplier-info/scorecard/scorecard.module';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,8 @@ import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
     LayoutModule,
     LoginModule,
     HomeModule,
-    SupplierInfoModule
+    SupplierInfoModule,
+    ScorecardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
